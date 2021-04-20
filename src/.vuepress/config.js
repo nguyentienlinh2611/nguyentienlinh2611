@@ -1,6 +1,7 @@
 const { description } = require('../../package.json')
 
 module.exports = {
+  dest: 'public',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#base
    */
