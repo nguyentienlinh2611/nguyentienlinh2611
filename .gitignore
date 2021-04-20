@@ -7,7 +7,6 @@ run
 .DS_Store
 .nyc_output
 dist
-public
 .basement
 config.local.js
 basement_dist
