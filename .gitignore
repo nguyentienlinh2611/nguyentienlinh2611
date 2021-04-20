@@ -6,6 +6,7 @@ coverage/
 run
 .DS_Store
 .nyc_output
+dist
 .basement
 config.local.js
 basement_dist
