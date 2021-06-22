@@ -9,7 +9,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Homepage | LinhNT Blog',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -25,6 +25,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
+  theme: require.resolve('./theme'),
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -38,30 +39,18 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Posts',
+        link: '/posts/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Tags',
+        link: '/tags/',
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'My CV',
+        link: '/cv/'
       }
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    ]
   },
 
   /**
