@@ -3,10 +3,19 @@
     <header id="header">
       <div class="header-wrapper">
         <div class="title">
-          aaa
+          <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
         </div>
         <div class="header-right-wrap">
-          aaa
+          <ul v-if="$themeConfig.nav" class="nav">
+            <li
+                v-for="item in $themeConfig.nav"
+                :key="item.text"
+                class="nav-item"
+            >
+              <NavLink :link="item.link">{{ item.text }}</NavLink>
+            </li>
+          </ul>
+          <SearchBox />
         </div>
       </div>
     </header>
@@ -14,7 +23,11 @@
 </template>
 
 <script>
+import SearchBox from '@SearchBox'
 
+export default {
+  components: { SearchBox },
+}
 </script>
 
 <style lang="stylus">
@@ -60,7 +73,6 @@
     a
       color $darkTextColor
       font-weight bold
-      font-family PT Serif, Serif
       text-decoration none
 
   .header-right-wrap
@@ -78,14 +90,12 @@
         margin-left 20px
 
         a
-          font-family PT Serif, Serif
           font-size 20px
           // color lighten(#3eaf7c, 30%)
           text-decoration none
           transition color 0.3s
 
     .search-box
-      font-family PT Serif, Serif
       margin-left 20px
 
       input
