@@ -1,4 +1,4 @@
-const { description } = require('../../package.json')
+const { description, authors } = require('../../package.json')
 
 module.exports = {
   dest: 'dist',
@@ -9,12 +9,11 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Homepage | LinhNT Blog',
+  title: 'Homepage',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
-
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
@@ -50,7 +49,15 @@ module.exports = {
         text: 'My CV',
         link: '/cv/'
       }
-    ]
+    ],
+    avatarImg: '/assets/img/avatar.png',
+    tagName: authors.tagName,
+    socialPage: 'https://facebook.com/linhnt2611',
+    socialLinks: {
+      github: 'https://github.com/nguyentienlinh2611',
+      linkedin: 'https://linkedin.com/in/nguyentienlinh2611',
+      facebook: 'https://facebook.com/linhnt2611'
+    }
   },
 
   /**

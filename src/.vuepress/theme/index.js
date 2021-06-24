@@ -111,8 +111,22 @@ module.exports = themeConfig => {
         ])
     }
 
+    const chainWebpack = (config) => {
+        const svgRule = config.module.rule('svg');
+
+        svgRule.uses.clear();
+
+        svgRule
+            .use('vue-loader')
+            .loader('vue-loader')
+            .end()
+            .use('vue-svg-loader')
+            .loader('vue-svg-loader');
+    }
+
     return {
         plugins,
+        chainWebpack,
         define: {
             THEME_BLOG_PAGINATION_COMPONENT: themeConfig.paginationComponent
                 ? themeConfig.paginationComponent
@@ -120,6 +134,7 @@ module.exports = themeConfig => {
         },
         alias: {
             fonts: path.resolve(__dirname, 'fonts'),
-        }
+        },
+
     }
 }
