@@ -39,7 +39,7 @@ module.exports = {
     nav: [
       {
         text: 'Posts',
-        link: '/posts/',
+        link: '/',
       },
       {
         text: 'Tags',
@@ -57,7 +57,8 @@ module.exports = {
       github: 'https://github.com/nguyentienlinh2611',
       linkedin: 'https://linkedin.com/in/nguyentienlinh2611',
       facebook: 'https://facebook.com/linhnt2611'
-    }
+    },
+    personalities: ['is a Software Engineer', 'is trash talk', 'is CSS noob', 'is shy', 'is JavaScript lover', 'is friendly!', 'is game addict', 'is an OOP Programmer', 'is verbose', 'is funny!', 'can count to 3']
   },
 
   /**

@@ -7,8 +7,10 @@
     </div>
     <div class="personality">
       <a v-bind:href="$themeConfig.socialPage">@{{$themeConfig.tagName}}</a>
-      <VueTyper v-bind:text="['is a Software Engineer', 'is trash talk', 'is CSS noob']"
-                :shuffle="true" :erase-style="select-back"  ></VueTyper>
+      <VueTyper v-if="$themeConfig.personalities"
+                v-bind:text="$themeConfig.personalities"
+                erase-style="backspace" v-bind:erase-delay="70"
+                v-bind:shuffle="true"></VueTyper>
     </div>
     <div class="social-links-group">
       <ul v-if="$themeConfig.socialLinks">
@@ -17,7 +19,7 @@
             key="github"
             class="social-button"
         >
-          <a v-bind:href="$themeConfig.socialLinks.github">
+          <a v-bind:href="$themeConfig.socialLinks.github" target="_blank">
             <GithubIcon />
           </a>
         </li>
@@ -26,7 +28,7 @@
             key="linkedin"
             class="social-button"
         >
-          <a v-bind:href="$themeConfig.socialLinks.linkedin">
+          <a v-bind:href="$themeConfig.socialLinks.linkedin" target="_blank">
             <LinkedinIcon />
           </a>
         </li>
@@ -35,7 +37,7 @@
             key="facebook"
             class="social-button"
         >
-          <a v-bind:href="$themeConfig.socialLinks.facebook">
+          <a v-bind:href="$themeConfig.socialLinks.facebook" target="_blank">
             <FacebookIcon />
           </a>
         </li>
