@@ -1,5 +1,6 @@
 <template>
-  <Content/>
+  <BaseListLayout v-if="$pagination" />
+  <Content v-else />
 </template>
 
 <script>
@@ -8,6 +9,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus">
 
 </style>

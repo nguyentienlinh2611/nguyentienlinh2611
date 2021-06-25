@@ -58,7 +58,7 @@ module.exports = {
       linkedin: 'https://linkedin.com/in/nguyentienlinh2611',
       facebook: 'https://facebook.com/linhnt2611'
     },
-    personalities: ['is a Software Engineer', 'is trash talk', 'is CSS noob', 'is shy', 'is JavaScript lover', 'is friendly!', 'is game addict', 'is an OOP Programmer', 'is verbose', 'is funny!', 'can count to 3']
+    personalities: ['is a Software Engineer', 'is trash talk', 'is CSS noob', 'is shy', 'is JavaScript lover', 'is friendly!', 'is game addict', 'is an OOP Programmer', 'is verbose', 'is funny!', 'is a sleepaholic', 'can count to 3']
   },
 
   /**
@@ -67,5 +67,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-  ]
+  ],
+  paginationComponent: 'SimplePagination'
 }

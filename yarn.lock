@@ -3091,7 +3091,7 @@ date-fns@^1.29.0:
   resolved "https://registry.npmjs.org/date-fns/-/date-fns-1.30.1.tgz"
   integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
 
-dayjs@^1.10.3:
+dayjs@^1.10.3, dayjs@^1.10.5:
   version "1.10.5"
   resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.10.5.tgz"
   integrity sha512-BUFis41ikLz+65iH6LHQCDm4YPMj5r1YFLdupPIyM4SGcXMmtiLQ7U37i+hGS8urIuqe7I/ou3IS1jVc4nbN4g==
@@ -4949,6 +4949,11 @@ javascript-stringify@^2.0.1:
   version "2.1.0"
   resolved "https://registry.npmjs.org/javascript-stringify/-/javascript-stringify-2.1.0.tgz"
   integrity sha512-JVAfqNPTvNq3sB/VHQJAFxN/sPgKnsKrCwyRt15zwNCdrMMJDdcEOdubuy+DuJYYdm0ox1J4uzEuYKkN+9yhVg==
+
+jeet@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/jeet/-/jeet-7.2.0.tgz#2aa562a2dc1d74cc99527113f16a821e974e30ee"
+  integrity sha512-TcUBVeb/PlBmiZRgqx/rHewXkyhnBzRANjPi99frE7FQcbXvnzH74IelKhdPlP94eBh/rI0T67B04yGaldWzTw==
 
 js-tokens@^4.0.0:
   version "4.0.0"
