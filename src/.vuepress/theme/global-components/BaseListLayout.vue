@@ -1,5 +1,6 @@
 <template>
   <div class="content-box">
+    <AuthorBox/>
     <div class="posts" itemscope itemtype="https://schema.org/Blog">
       <ArticleCard class="col"
         v-for="page in pages"
@@ -20,11 +21,12 @@
 
 import Vue from 'vue'
 import {Pagination, SimplePagination} from '@vuepress/plugin-blog/lib/client/components'
+import AuthorBox from "@theme/components/AuthorBox"
 import ArticleCard from '../components/ArticleCard'
 
 export default {
   name: "BaseListLayout",
-  components: {ArticleCard, Pagination, SimplePagination},
+  components: {AuthorBox, ArticleCard, Pagination, SimplePagination},
   data() {
     return {
       paginationComponent: null,
@@ -60,5 +62,12 @@ export default {
   .posts
 
     .col
+      margin-bottom 80px
       column(1/3, $cycle: 3)
+
+      @media (max-width: $MQNarrow)
+        column(1/2, $cycle: 2)
+
+      @media (max-width: $MQMobile)
+        column(1, $cycle: 1)
 </style>

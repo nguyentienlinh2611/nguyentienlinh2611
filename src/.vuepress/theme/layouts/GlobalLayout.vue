@@ -2,7 +2,6 @@
   <div id="theme-container">
     <Header />
     <div class="content-wrapper" @click="isMobileHeaderOpen = false">
-      <AuthorBox/>
       <DefaultGlobalLayout />
     </div>
   </div>
@@ -11,13 +10,11 @@
 <script>
 import GlobalLayout from '@app/components/GlobalLayout.vue'
 import Header from '@theme/components/Header.vue'
-import AuthorBox from "@theme/components/AuthorBox"
 
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
-    Header,
-    AuthorBox
+    Header
   },
 
   data() {
