@@ -81,7 +81,7 @@ export default {
 
   .post-thumbnail
     overflow: hidden;
-    box-shadow: 0 2px 15px rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.40);
     border-radius: 5px;
     height: 300px;
 
@@ -97,10 +97,13 @@ export default {
   .text-container
     padding: 10px 20px;
 
-
     .title
+      margin: 10px 0;
       a
         text-decoration: none;
+
+    .description
+      margin: 10px 0;
 
     footer
       display: flex;
@@ -109,7 +112,7 @@ export default {
       align-items: center;
 
       .date
-        font-size: 16px;
+        font-size: 0.65em;
 
       .tags
         margin: 0;
@@ -119,7 +122,7 @@ export default {
             background: $postTagBgColor;
             border-radius: .2rem;
             color: $postTagColor;
-            font-size: .75rem;
+            font-size: .55rem;
             font-weight: 900;
             margin-right: 5px;
             padding: .2rem .4rem;

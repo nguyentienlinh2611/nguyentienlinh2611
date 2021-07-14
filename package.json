@@ -23,7 +23,8 @@
     "dayjs": "^1.10.5",
     "lodash": "^4.17.21",
     "vue-feather-icons": "^5.1.0",
-    "vue-typer": "^1.2.0"
+    "vue-typer": "^1.2.0",
+    "vuepress-plugin-reading-progress": "^1.0.10"
   },
   "devDependencies": {
     "jeet": "^7.2.0",

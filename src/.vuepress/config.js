@@ -9,7 +9,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Homepage',
+  title: 'LinhNT\'s Blog',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -58,7 +58,17 @@ module.exports = {
       linkedin: 'https://linkedin.com/in/nguyentienlinh2611',
       facebook: 'https://facebook.com/linhnt2611'
     },
-    personalities: ['is a Software Engineer', 'is trash talk', 'is CSS noob', 'is shy', 'is JavaScript lover', 'is friendly!', 'is game addict', 'is an OOP Programmer', 'is verbose', 'is funny!', 'is a sleepaholic', 'can count to 3']
+    personalities: ['is a Software Engineer', 'is trash talk', 'is CSS noob', 'is shy', 'is JavaScript lover', 'is friendly!', 'is game addict', 'is an OOP Programmer', 'is verbose', 'is funny!', 'is a sleepaholic', 'can count to 3'],
+    newsletter: {
+      endpoint: "https://github.us6.list-manage.com/subscribe/post?u=d53149f7943c78ca21b5b4130&amp;id=2b6ff0fbc8"
+    },
+    comment: {
+      service: 'vssue',
+      owner: 'nguyentienlinh2611',
+      repo: 'nguyentienlinh2611.github.io',
+      clientId: 'e8f9d8b492216d6f1e77',
+      clientSecret: 'b3c66c1e891a3be47ef53fa7f48e1982a2f66ca5'
+    }
   },
 
   /**

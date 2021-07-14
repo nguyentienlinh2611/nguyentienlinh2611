@@ -39,7 +39,7 @@ module.exports = themeConfig => {
         ],
         globalPagination: {
             lengthPerPage: 6,
-        },
+        }
     }
 
     let resolvedFeedOptions
@@ -75,7 +75,7 @@ module.exports = themeConfig => {
 
     const blogPluginOptions = Object.assign(
         {},
-        themeConfig.classifierConfig || defaultBlogPluginOptions,
+        defaultBlogPluginOptions,
         themeConfigPluginOptions
     )
 
@@ -87,7 +87,7 @@ module.exports = themeConfig => {
 
     const plugins = [
         ['@vuepress/blog', blogPluginOptions],
-        '@vuepress/plugin-nprogress',
+        '@vuepress/nprogress',
         ['@vuepress/medium-zoom', true],
         [
             '@vuepress/search',
@@ -95,7 +95,12 @@ module.exports = themeConfig => {
                 searchMaxSuggestions: 10,
             },
         ],
-        ['smooth-scroll', enableSmoothScroll]
+        ['smooth-scroll', enableSmoothScroll],
+        [
+            'reading-progress', {
+                readingDir: '_posts'
+            }
+        ]
     ]
 
     /**
