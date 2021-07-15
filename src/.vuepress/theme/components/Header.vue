@@ -59,7 +59,7 @@ export default {
   display flex
   line-height 40px
   height 40px
-  width $contentWidth
+  max-width $contentWidth
   margin auto
 
   .title
