@@ -99,6 +99,9 @@ export default {
           height 100%
           width 100%
 
+      .newsletter__content
+        white-space pre-wrap
+
     .post-toc
       column(1/5)
 

@@ -60,7 +60,14 @@ module.exports = {
     },
     personalities: ['is a Software Engineer', 'is trash talk', 'is CSS noob', 'is shy', 'is JavaScript lover', 'is friendly!', 'is game addict', 'is an OOP Programmer', 'is verbose', 'is funny!', 'is a sleepaholic', 'can count to 3'],
     newsletter: {
-      endpoint: "https://github.us6.list-manage.com/subscribe/post?u=d53149f7943c78ca21b5b4130&amp;id=2b6ff0fbc8"
+      endpoint: 'https://github.us6.list-manage.com/subscribe/post?u=d53149f7943c78ca21b5b4130&amp;id=2b6ff0fbc8',
+      content: 'Subscribe to get notified whenever my new post comes out!\n I create a new article on a whim, but I will try to keep doing this regularly 😄'
+    },
+    sitemap: {
+      hostname: 'https://nguyentienlinh2611.github.io/'
+    },
+    feed: {
+      canonical_base: 'https://nguyentienlinh2611.github.io/',
     },
     comment: {
       service: 'vssue',

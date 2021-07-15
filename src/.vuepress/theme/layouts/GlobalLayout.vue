@@ -4,17 +4,20 @@
     <div class="content-wrapper" @click="isMobileHeaderOpen = false">
       <DefaultGlobalLayout />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import GlobalLayout from '@app/components/GlobalLayout.vue'
 import Header from '@theme/components/Header.vue'
+import Footer from '@theme/components/Footer.vue'
 
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
-    Header
+    Header,
+    Footer
   },
 
   data() {

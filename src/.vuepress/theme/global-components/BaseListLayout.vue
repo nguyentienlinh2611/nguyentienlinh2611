@@ -59,6 +59,9 @@ export default {
 @import '~jeet/styl'
 
 .content-box
+  display flex
+  flex-direction column
+
   .posts
 
     .col

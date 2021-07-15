@@ -16,6 +16,7 @@
             </li>
           </ul>
           <SearchBox />
+          <Feed />
         </div>
       </div>
     </header>
@@ -24,9 +25,10 @@
 
 <script>
 import SearchBox from '@SearchBox'
+import Feed from "./Feed";
 
 export default {
-  components: { SearchBox },
+  components: { SearchBox, Feed },
 }
 </script>
 
