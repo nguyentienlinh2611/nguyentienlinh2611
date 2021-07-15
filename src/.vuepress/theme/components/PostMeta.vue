@@ -1,21 +1,17 @@
 <template>
   <div class="post-meta">
-    <div
-      v-if="author"
-      class="post-meta-author"
-      itemprop="publisher author"
-      itemtype="https://schema.org/Person"
-      itemscope
-    >
-      <NavigationIcon />
-      <span itemprop="name">{{ author }}</span>
-      <span v-if="location" itemprop="address"> &nbsp; in {{ location }}</span>
-    </div>
-    <div v-if="date" class="post-meta-date">
+    <div class="date" v-if="author && date">
       <ClockIcon />
-      <time pubdate itemprop="datePublished" :datetime="date">
-        {{ resolvedDate }}
-      </time>
+      <span itemprop="author name">{{ author }}</span>&nbsp;wrote&nbsp;
+      <span v-if="date">
+            <time
+                pubdate
+                itemprop="datePublished"
+                v-bind:datetime="date"
+            >
+              {{ resolvedDate }}
+            </time>
+          </span>
     </div>
     <ul v-if="tags" class="post-meta-tags" itemprop="keywords">
       <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" />
@@ -25,11 +21,11 @@
 
 <script>
 import dayjs from 'dayjs'
-import dayjsPluginUTC from 'dayjs/plugin/utc'
 import { NavigationIcon, ClockIcon } from 'vue-feather-icons'
 import PostTag from './PostTag.vue'
+import relativeTime from 'dayjs/plugin/relativeTime'
 
-dayjs.extend(dayjsPluginUTC)
+dayjs.extend(relativeTime)
 
 export default {
   name: 'PostMeta',
@@ -50,9 +46,7 @@ export default {
   },
   computed: {
     resolvedDate() {
-      return dayjs
-        .utc(this.date)
-        .format(this.$themeConfig.dateFormat || 'ddd MMM DD YYYY')
+      return dayjs(this.date).fromNow()
     },
     resolvedTags() {
       if (!this.tags || Array.isArray(this.tags)) return this.tags
@@ -64,22 +58,24 @@ export default {
 
 <style lang="stylus">
 .post-meta
+  display flex
+  justify-content space-between
+
   &-tags
     display flex
     flex-wrap wrap
     list-style none
     overflow hidden
     padding 0
-    margin 20px 0
+    margin 0
 
     > li
       margin-bottom 10px
 
   > div
     display inline-flex
-    line-height 12px
-    font-size 12px
-    margin-right 20px
+    font-size 0.85em
+    align-items center
 
   svg
     margin-right 5px

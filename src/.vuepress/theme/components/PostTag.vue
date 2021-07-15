@@ -26,45 +26,13 @@ export default {
     margin-right 10px
 
   a
-    background-color $postTagBgColor
-    border-radius 3px 0 0 3px
-    padding 0 20px 0 23px
-    position relative
+    background $postTagBgColor
+    border-radius .2rem
+    color $postTagColor
+    font-size .55rem
+    font-weight 900
+    margin-right 5px
+    padding .2rem .4rem
     text-decoration none
-    height 26px
-    display inline-block
-
-    span
-      color $postTagColor
-      transition color 0.2s
-
-    &:before
-      position absolute
-      left 10px
-      top 10px
-      background #fff
-      border-radius 50%
-      box-shadow inset 0 1px rgba(0, 0, 0, 0.25)
-      content ''
-      height 6px
-      width 6px
-
-    &:after
-      position absolute
-      right 0
-      top 0
-      background $bgColor
-      border-bottom 13px solid transparent
-      border-left 10px solid $postTagBgColor
-      border-top 13px solid transparent
-      content ''
-
-    &:hover
-      background-color $accentColor
-
-      &:after
-        border-left-color $accentColor
-
-      span
-        color #fff
+    text-transform uppercase
 </style>

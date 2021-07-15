@@ -17,15 +17,18 @@
         {{ post.frontmatter.summary || post.summary }}
       </p>
       <footer>
-        <span v-if="post.frontmatter.date" class="date">
-          <time
-              pubdate
-              itemprop="datePublished"
-              v-bind:datetime="post.frontmatter.date"
-          >
-            {{ resolvePostDate(post.frontmatter.author, post.frontmatter.date) }}
-          </time>
-        </span>
+        <div class="date" v-if="post.frontmatter.author && post.frontmatter.date">
+          <span itemprop="author name">{{ post.frontmatter.author }}</span>&nbsp;wrote
+          <span>
+            <time
+                pubdate
+                itemprop="datePublished"
+                v-bind:datetime="post.frontmatter.date"
+            >
+              {{ resolvePostDate(post.frontmatter.date) }}
+            </time>
+          </span>
+        </div>
         <ul v-if="post.frontmatter.tags" class="tags" itemprop="keywords">
           <li class="tag-item">
             <router-link
@@ -55,9 +58,8 @@ export default {
   components: {NavLink},
   props: ['post'],
   methods: {
-    resolvePostDate(author, date) {
-      return `${author} wrote ${dayjs(date)
-          .fromNow()}`
+    resolvePostDate(date) {
+      return dayjs(date).fromNow()
     },
 
     resolvePostTags(tags) {

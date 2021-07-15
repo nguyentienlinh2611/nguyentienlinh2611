@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         text: 'Tags',
-        link: '/tags/',
+        link: '/tag/',
       },
       {
         text: 'My CV',
