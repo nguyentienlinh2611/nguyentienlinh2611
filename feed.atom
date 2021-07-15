@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nguyentienlinh2611.github.io/</id>
+    <title>LinhNT&apos;s Blog</title>
+    <updated>2021-07-15T15:10:48.096Z</updated>
+    <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+    <link rel="alternate" href="https://nguyentienlinh2611.github.io/"/>
+    <link rel="self" href="https://nguyentienlinh2611.github.io/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Writing a vuepress theme 1]]></title>
+        <id>https://nguyentienlinh2611.github.io/2019/05/06/writing-a-vuepress-theme/</id>
+        <link href="https://nguyentienlinh2611.github.io/2019/05/06/writing-a-vuepress-theme/">
+        </link>
+        <updated>2019-05-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[To write a theme, create a .vuepress/theme directory in your docs root, and then create a Layout.vue file:
+.
+└─ .vuepress
+   └─ theme
+       └─ Layout.vue
+
+From there it's the same as developing a normal Vue application. It is entirely up to you how to organize your theme.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, World]]></title>
+        <id>https://nguyentienlinh2611.github.io/2021/06/20/hello-word/</id>
+        <link href="https://nguyentienlinh2611.github.io/2021/06/20/hello-word/">
+        </link>
+        <updated>2021-06-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When Louise opened her eyes she stared dreamily up at the slight abrasion in the shingle roof through which morning blinked. There were not many of these informal skylights, for the roof was not an old one. But there were a few, as there are likely to be in most summer cottages. When there was a violent downpour one had to hustle around distributing pans and kettles to catch an often ambitious drip. But this morning there was no rain. Louise's pretty face was not in danger of an unsolicited bath. It was a radiant summer dawn.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, World]]></title>
+        <id>https://nguyentienlinh2611.github.io/2021/06/21/hello-word/</id>
+        <link href="https://nguyentienlinh2611.github.io/2021/06/21/hello-word/">
+        </link>
+        <updated>2021-06-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[For a moment she wondered how she had happened to wake so early. The July birds were all chattering in the woods. But why should she waken out of deep slumber unsummoned? Presently, however, the reason for this phenomenon flashed vividly. Downstairs in the cottage living room, on the chimney-piece, stood an old Dutch clock. This clock possessed a kind of wiry, indignant tick, and a voice, when it was time to speak, full of a jerky, twanging spite.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, World]]></title>
+        <id>https://nguyentienlinh2611.github.io/2021/06/22/hello-word/</id>
+        <link href="https://nguyentienlinh2611.github.io/2021/06/22/hello-word/">
+        </link>
+        <updated>2021-06-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Louise could hear the sharp ticking. Then there came a little whirr—like a very wheeze of decrepitude—followed by an angry striking. One, two, three, four. And at the very first stroke[Pg 12] she knew why she was awake at so almost grotesque an hour. The remembrance brought its half whimsical shock. In an hour Leslie would be cranking the engine of his little launch, and they would be chugging toward Beulah.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Linh]]></title>
+        <id>https://nguyentienlinh2611.github.io/2021/06/23/hello-linh/</id>
+        <link href="https://nguyentienlinh2611.github.io/2021/06/23/hello-linh/">
+        </link>
+        <updated>2021-06-23T00:00:00.000Z</updated>
+    </entry>
+</feed>
