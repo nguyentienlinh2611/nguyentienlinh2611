@@ -30,14 +30,13 @@
           </span>
         </div>
         <ul v-if="post.frontmatter.tags" class="tags" itemprop="keywords">
-          <li class="tag-item">
+          <li class="tag-item" v-for="tag in resolvePostTags(post.frontmatter.tags)">
             <router-link
                 class="tag"
-                v-for="tag in resolvePostTags(post.frontmatter.tags)"
                 :key="tag"
                 :to="'/tag/' + tag"
             >
-              {{ tag }}
+              #{{ tag }}
             </router-link>
           </li>
         </ul>
@@ -118,6 +117,7 @@ export default {
 
       .tags
         margin: 0;
+        display: flex;
         .tag-item
           line-height: 32px;
           .tag

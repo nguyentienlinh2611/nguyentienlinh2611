@@ -22,7 +22,7 @@
 import Vue from 'vue'
 import {Pagination, SimplePagination} from '@vuepress/plugin-blog/lib/client/components'
 import AuthorBox from "@theme/components/AuthorBox"
-import ArticleCard from '../components/ArticleCard'
+import ArticleCard from '@theme/components/ArticleCard'
 
 export default {
   name: "BaseListLayout",

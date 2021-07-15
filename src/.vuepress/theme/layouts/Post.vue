@@ -2,7 +2,7 @@
   <div class="wrapper">
     <router-link class="back-button" to="/">
       <ArrowLeftIcon />
-      <span>Quay lại</span>
+      <span>Back</span>
     </router-link>
     <div class="post-layout">
     <article
