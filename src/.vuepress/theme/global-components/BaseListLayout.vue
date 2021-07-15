@@ -1,12 +1,14 @@
 <template>
   <div class="content-box">
-    <AuthorBox/>
+    <client-only>
+      <AuthorBox/>
+    </client-only>
     <div class="posts" itemscope itemtype="https://schema.org/Blog">
       <ArticleCard class="col"
         v-for="page in pages"
         v-bind:key="page.key"
         v-bind:post="page"
-      ></ArticleCard>
+      />
     </div>
 
     <component
@@ -21,12 +23,10 @@
 
 import Vue from 'vue'
 import {Pagination, SimplePagination} from '@vuepress/plugin-blog/lib/client/components'
-import AuthorBox from "@theme/components/AuthorBox"
-import ArticleCard from '@theme/components/ArticleCard'
 
 export default {
   name: "BaseListLayout",
-  components: {AuthorBox, ArticleCard, Pagination, SimplePagination},
+  components: {Pagination, SimplePagination},
   data() {
     return {
       paginationComponent: null,

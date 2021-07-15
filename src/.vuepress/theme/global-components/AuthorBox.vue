@@ -7,10 +7,12 @@
     </div>
     <div class="personality">
       <a v-bind:href="$themeConfig.socialPage">@{{$themeConfig.tagName}}</a>
-      <VueTyper v-if="$themeConfig.personalities"
-                v-bind:text="$themeConfig.personalities"
-                erase-style="backspace" v-bind:erase-delay="70"
-                v-bind:shuffle="true"></VueTyper>
+      <client-only>
+        <VueTyper v-if="$themeConfig.personalities"
+                  v-bind:text="$themeConfig.personalities"
+                  erase-style="backspace" v-bind:erase-delay="70"
+                  v-bind:shuffle="true"></VueTyper>
+      </client-only>
     </div>
     <div class="social-links-group">
       <ul v-if="$themeConfig.socialLinks">

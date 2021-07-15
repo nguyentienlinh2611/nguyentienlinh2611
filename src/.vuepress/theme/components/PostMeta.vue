@@ -59,7 +59,11 @@ export default {
 <style lang="stylus">
 .post-meta
   display flex
+  flex-direction row
   justify-content space-between
+
+  @media (max-width: $MQMobile)
+    flex-direction column
 
   &-tags
     display flex
@@ -76,6 +80,7 @@ export default {
     display inline-flex
     font-size 0.85em
     align-items center
+    margin-bottom 10px
 
   svg
     margin-right 5px

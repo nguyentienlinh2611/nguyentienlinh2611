@@ -183,7 +183,7 @@ export default {
       padding-left 1rem * (i - 2)
 
 // for vuepress-toc
-@media (min-width: 1300px)
+@media (min-width: $MQMobile)
   .vuepress-toc
     display block
 </style>

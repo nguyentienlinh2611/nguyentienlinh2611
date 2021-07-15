@@ -88,7 +88,8 @@ export default {
     justify-content space-between
 
     .post-content
-      column(4/5, $gutter: 5)
+      @media (min-width: $MQMobile)
+        column(4/5, $gutter: 5)
 
       .post-cover-image
         background-color #fafafa
@@ -103,6 +104,7 @@ export default {
         white-space pre-wrap
 
     .post-toc
-      column(1/5)
+      @media (min-width: $MQMobile)
+        column(1/5)
 
 </style>

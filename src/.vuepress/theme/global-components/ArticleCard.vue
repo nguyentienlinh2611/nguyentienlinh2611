@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import NavLink from '../global-components/NavLink'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 
@@ -54,7 +53,6 @@ dayjs.extend(relativeTime)
 
 export default {
   name: "ArticleCard",
-  components: {NavLink},
   props: ['post'],
   methods: {
     resolvePostDate(date) {
